@@ -1,0 +1,3 @@
+D:/github/BigPower/Software/cmake-build-debug/CMakeFiles/Software.dir
+D:/github/BigPower/Software/cmake-build-debug/CMakeFiles/edit_cache.dir
+D:/github/BigPower/Software/cmake-build-debug/CMakeFiles/rebuild_cache.dir
