@@ -1,5 +1,56 @@
-(kicad_sch (version 20250114) (generator "eeschema") (generator_version "9.0")
-  (paper "A4")
-  (lib_symbols)
-  (symbol_instances)
+(kicad_sch
+	(version 20250114)
+	(generator "eeschema")
+	(generator_version "9.0")
+	(uuid "0704f19e-3532-4d63-b9fa-b6ad4264c9ae")
+	(paper "A4")
+	(lib_symbols)
+	(sheet
+		(at 22.86 29.21)
+		(size 59.69 43.18)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "567d7ead-1e39-4d6d-8152-f0040c9dbe56")
+		(property "Sheetname" "Czesc mocowa"
+			(at 22.86 28.4984 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "czesc_mocowa.kicad_sch"
+			(at 22.86 72.9746 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "PCB"
+				(path "/0704f19e-3532-4d63-b9fa-b6ad4264c9ae"
+					(page "2")
+				)
+			)
+		)
+	)
+	(sheet_instances
+		(path "/"
+			(page "1")
+		)
+	)
+	(embedded_fonts no)
 )
