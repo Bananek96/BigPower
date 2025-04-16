@@ -3946,6 +3946,206 @@
 		(color 0 0 0 0)
 		(uuid "fec27bf1-2c3f-4d91-8b09-cfe724ce807e")
 	)
+	(no_connect
+		(at 45.72 107.95)
+		(uuid "0eb10c34-ee31-488f-acce-5b07bf451800")
+	)
+	(no_connect
+		(at 59.69 100.33)
+		(uuid "163fe51f-24cf-4a9c-be72-a70616da8b01")
+	)
+	(no_connect
+		(at 45.72 110.49)
+		(uuid "17d5dda8-bc2c-4b18-bc32-74e79f66f007")
+	)
+	(no_connect
+		(at 45.72 87.63)
+		(uuid "1b599f45-86f8-4879-8184-9948a0ac0109")
+	)
+	(no_connect
+		(at 85.09 100.33)
+		(uuid "21458c14-59a9-4069-acc1-7d5a509f1756")
+	)
+	(no_connect
+		(at 45.72 120.65)
+		(uuid "21d18dfd-c7a6-4198-8da4-0510a4e4bd3c")
+	)
+	(no_connect
+		(at 85.09 102.87)
+		(uuid "262d1b30-1ae1-48b5-bfe1-73fc074aa553")
+	)
+	(no_connect
+		(at 45.72 118.11)
+		(uuid "28f0e02b-7636-4314-9e95-b5add5b4692c")
+	)
+	(no_connect
+		(at 45.72 67.31)
+		(uuid "2bb8dade-717d-4322-b51e-a709797e094e")
+	)
+	(no_connect
+		(at 45.72 113.03)
+		(uuid "351d08c1-e5aa-41dd-81b8-48c1faf1dc1a")
+	)
+	(no_connect
+		(at 45.72 90.17)
+		(uuid "3992bb8a-e563-4f8c-875b-71832e053523")
+	)
+	(no_connect
+		(at 45.72 123.19)
+		(uuid "3bc485e0-2179-43f9-ad8f-a69a72f0a346")
+	)
+	(no_connect
+		(at 15.24 95.25)
+		(uuid "3d25e094-f9b4-49b2-95b4-b736a1e734d3")
+	)
+	(no_connect
+		(at 45.72 74.93)
+		(uuid "3e65e3cb-e96d-4709-bb49-20528f41f8d0")
+	)
+	(no_connect
+		(at 15.24 100.33)
+		(uuid "4728a26c-1760-4d3a-a6cb-f3fc8fbb4f85")
+	)
+	(no_connect
+		(at 85.09 107.95)
+		(uuid "4c5453ac-a644-47bf-ad96-d3fa58c5c538")
+	)
+	(no_connect
+		(at 45.72 100.33)
+		(uuid "4cc79520-8e58-4584-81c1-a8d9b3e19207")
+	)
+	(no_connect
+		(at 45.72 77.47)
+		(uuid "55053c86-f53c-462e-89f2-8e73ee029138")
+	)
+	(no_connect
+		(at 15.24 72.39)
+		(uuid "577110d7-3dd6-4413-bda7-9115850c0729")
+	)
+	(no_connect
+		(at 85.09 72.39)
+		(uuid "58c01830-ee99-41a0-97be-3fe7a96f33c0")
+	)
+	(no_connect
+		(at 59.69 92.71)
+		(uuid "5fbe8dd9-dac7-4b5c-b1f1-176b2fa9b6dc")
+	)
+	(no_connect
+		(at 45.72 69.85)
+		(uuid "6b034fa8-9e2d-469b-bed0-f852240fae79")
+	)
+	(no_connect
+		(at 59.69 102.87)
+		(uuid "730d8cfd-6dff-4e5c-8779-5ed555368a63")
+	)
+	(no_connect
+		(at 85.09 82.55)
+		(uuid "74286336-2b85-436d-bf0e-98786f0fc512")
+	)
+	(no_connect
+		(at 45.72 97.79)
+		(uuid "74f87866-65ff-484f-aa3c-7db53dd45f0a")
+	)
+	(no_connect
+		(at 45.72 64.77)
+		(uuid "770282e6-6888-4914-9295-319a016599f3")
+	)
+	(no_connect
+		(at 15.24 69.85)
+		(uuid "7be35dcd-5209-4e6f-9826-85a02460303a")
+	)
+	(no_connect
+		(at 85.09 87.63)
+		(uuid "82a2b4b7-96f2-4dc1-bf40-13ef5dc5d2cf")
+	)
+	(no_connect
+		(at 15.24 102.87)
+		(uuid "83461af3-83b5-44e0-9c55-07fa758ee147")
+	)
+	(no_connect
+		(at 45.72 92.71)
+		(uuid "8e86aabc-f7ae-40b6-ac27-9209a8acaa5b")
+	)
+	(no_connect
+		(at 15.24 64.77)
+		(uuid "8ed23749-2303-436d-8c03-54a693b4c89b")
+	)
+	(no_connect
+		(at 45.72 105.41)
+		(uuid "8efe9879-2eba-4877-ac4c-2620bf97d358")
+	)
+	(no_connect
+		(at 45.72 80.01)
+		(uuid "8f0a24fa-e41a-4ea6-964f-d9cf97eb6b12")
+	)
+	(no_connect
+		(at 85.09 85.09)
+		(uuid "90127e97-cafd-4d52-9717-e8a618ffb800")
+	)
+	(no_connect
+		(at 59.69 69.85)
+		(uuid "9114d136-e31a-4a50-ac59-78164157bb33")
+	)
+	(no_connect
+		(at 85.09 77.47)
+		(uuid "a217000f-48db-4214-98b9-433a71d7d8ca")
+	)
+	(no_connect
+		(at 85.09 105.41)
+		(uuid "aa826d3a-fd39-44c2-b22f-b439277c3319")
+	)
+	(no_connect
+		(at 59.69 80.01)
+		(uuid "accb91c0-c8ea-4be6-98da-d1f159038564")
+	)
+	(no_connect
+		(at 59.69 82.55)
+		(uuid "af2d3572-30b2-4a6d-b40e-bc293f1fc14c")
+	)
+	(no_connect
+		(at 59.69 97.79)
+		(uuid "b60d6152-3a08-40f8-a123-8349bd5f06e0")
+	)
+	(no_connect
+		(at 45.72 72.39)
+		(uuid "b7c4a1c6-fecf-450b-bc34-b377d640c927")
+	)
+	(no_connect
+		(at 15.24 107.95)
+		(uuid "cd3f3a24-1df3-4321-9d8b-d71e02f85ca4")
+	)
+	(no_connect
+		(at 85.09 80.01)
+		(uuid "cde79416-c8f3-476e-afc6-971d2ea60aac")
+	)
+	(no_connect
+		(at 85.09 74.93)
+		(uuid "d758d60f-319a-4b91-b9dd-f011a78da36e")
+	)
+	(no_connect
+		(at 59.69 74.93)
+		(uuid "d98968c5-9ffd-489c-9405-dbf958833b4c")
+	)
+	(no_connect
+		(at 15.24 105.41)
+		(uuid "ea4f2ce9-b125-401a-bbb3-0a568291701b")
+	)
+	(no_connect
+		(at 59.69 95.25)
+		(uuid "f29910ec-11f5-4974-8d1f-aa167054573b")
+	)
+	(no_connect
+		(at 45.72 115.57)
+		(uuid "f8d7ee54-412e-4a0b-a2b2-423c02820d74")
+	)
+	(no_connect
+		(at 45.72 95.25)
+		(uuid "f954bbdd-ee24-4751-a8e0-cd4181c6bdf2")
+	)
+	(no_connect
+		(at 45.72 102.87)
+		(uuid "fb13f922-5b16-49ce-9d00-5695e37bd02b")
+	)
 	(wire
 		(pts
 			(xy 205.74 21.59) (xy 205.74 15.24)
@@ -5536,7 +5736,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "02d9a4e6-65f5-46fb-8617-c852a7ee3fae")
-		(property "Reference" "C9"
+		(property "Reference" "C10"
 			(at 186.69 70.2309 0)
 			(effects
 				(font
@@ -5545,7 +5745,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "C_Polarized"
+		(property "Value" "100uF"
 			(at 186.69 72.7709 0)
 			(effects
 				(font
@@ -5554,7 +5754,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:CP_Elec_10x10"
 			(at 183.8452 76.2 0)
 			(effects
 				(font
@@ -5594,6 +5794,12 @@
 					(unit 1)
 				)
 			)
+			(project "czesc_mocowa"
+				(path "/4feabfb7-faa0-4bbc-9dd7-e5fa6c0a0ab3"
+					(reference "C10")
+					(unit 1)
+				)
+			)
 		)
 	)
 	(symbol
@@ -5606,7 +5812,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "086f46c2-8e24-4f0b-9c3d-4db95513fc47")
-		(property "Reference" "Q1"
+		(property "Reference" "Q3"
 			(at 171.45 64.7699 0)
 			(effects
 				(font
@@ -5624,7 +5830,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Package_TO_SOT_THT:TO-220-3_Horizontal_TabUp"
 			(at 170.18 63.5 0)
 			(effects
 				(font
@@ -5696,7 +5902,7 @@
 			)
 			(project "czesc_mocowa"
 				(path "/4feabfb7-faa0-4bbc-9dd7-e5fa6c0a0ab3"
-					(reference "Q?")
+					(reference "Q3")
 					(unit 1)
 				)
 			)
@@ -5712,7 +5918,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "0ae8de4b-e031-44b6-874d-42162234a158")
-		(property "Reference" "R?"
+		(property "Reference" "R3"
 			(at 146.05 165.1 90)
 			(effects
 				(font
@@ -5728,7 +5934,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_1210_3225Metric"
 			(at 146.05 173.228 90)
 			(effects
 				(font
@@ -5777,82 +5983,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:C_Polarized")
-		(at 144.78 58.42 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "0b5d070e-2355-42cd-b94c-75b7b9bfc9c3")
-		(property "Reference" "C1"
-			(at 148.59 56.2609 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "C_Polarized"
-			(at 148.59 58.8009 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" ""
-			(at 145.7452 62.23 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 144.78 58.42 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Polarized capacitor"
-			(at 144.78 58.42 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "da5775dc-5fcd-40a9-8c99-6abec67b39e1")
-		)
-		(pin "2"
-			(uuid "980999c0-f394-4d49-b3e6-b7000e436451")
-		)
-		(instances
-			(project "PCB"
-				(path "/0704f19e-3532-4d63-b9fa-b6ad4264c9ae/567d7ead-1e39-4d6d-8152-f0040c9dbe56"
-					(reference "C1")
-					(unit 1)
-				)
-			)
-			(project "czesc_mocowa"
-				(path "/4feabfb7-faa0-4bbc-9dd7-e5fa6c0a0ab3"
-					(reference "C?")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "power:GND")
 		(at 121.92 142.24 0)
 		(unit 1)
@@ -5862,7 +5992,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "1397b77d-aa7e-46da-b1ba-2d514fc82612")
-		(property "Reference" "#PWR04"
+		(property "Reference" "#PWR0104"
 			(at 121.92 148.59 0)
 			(effects
 				(font
@@ -5918,7 +6048,7 @@
 			)
 			(project "czesc_mocowa"
 				(path "/4feabfb7-faa0-4bbc-9dd7-e5fa6c0a0ab3"
-					(reference "#PWR?")
+					(reference "#PWR0104")
 					(unit 1)
 				)
 			)
@@ -5934,7 +6064,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "13ff1526-c2b2-4134-b94a-8800157077e0")
-		(property "Reference" "R2"
+		(property "Reference" "R9"
 			(at 148.59 88.9 90)
 			(effects
 				(font
@@ -5950,7 +6080,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_1210_3225Metric"
 			(at 148.59 97.028 90)
 			(effects
 				(font
@@ -5992,7 +6122,7 @@
 			)
 			(project "czesc_mocowa"
 				(path "/4feabfb7-faa0-4bbc-9dd7-e5fa6c0a0ab3"
-					(reference "R?")
+					(reference "R9")
 					(unit 1)
 				)
 			)
@@ -6008,7 +6138,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "14090cc7-4780-45f0-897e-b99a495f334e")
-		(property "Reference" "#PWR01"
+		(property "Reference" "#PWR0101"
 			(at 184.15 64.77 0)
 			(effects
 				(font
@@ -6064,7 +6194,7 @@
 			)
 			(project "czesc_mocowa"
 				(path "/4feabfb7-faa0-4bbc-9dd7-e5fa6c0a0ab3"
-					(reference "#PWR?")
+					(reference "#PWR0101")
 					(unit 1)
 				)
 			)
@@ -6080,7 +6210,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "1a26934b-4f5e-419a-9752-e8b302160ee5")
-		(property "Reference" "R4"
+		(property "Reference" "R7"
 			(at 144.78 115.57 90)
 			(effects
 				(font
@@ -6096,7 +6226,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_1210_3225Metric"
 			(at 144.78 123.698 90)
 			(effects
 				(font
@@ -6138,7 +6268,7 @@
 			)
 			(project "czesc_mocowa"
 				(path "/4feabfb7-faa0-4bbc-9dd7-e5fa6c0a0ab3"
-					(reference "R?")
+					(reference "R7")
 					(unit 1)
 				)
 			)
@@ -6230,7 +6360,7 @@
 			)
 			(project "czesc_mocowa"
 				(path "/4feabfb7-faa0-4bbc-9dd7-e5fa6c0a0ab3"
-					(reference "D?")
+					(reference "D1")
 					(unit 1)
 				)
 			)
@@ -6264,7 +6394,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_1206_3216Metric"
 			(at 177.4952 76.2 0)
 			(effects
 				(font
@@ -6304,6 +6434,12 @@
 					(unit 1)
 				)
 			)
+			(project "czesc_mocowa"
+				(path "/4feabfb7-faa0-4bbc-9dd7-e5fa6c0a0ab3"
+					(reference "C8")
+					(unit 1)
+				)
+			)
 		)
 	)
 	(symbol
@@ -6316,7 +6452,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "33f4d83e-1170-4e33-b02a-25e1d6c8332e")
-		(property "Reference" "Q3"
+		(property "Reference" "Q1"
 			(at 163.83 120.6499 0)
 			(effects
 				(font
@@ -6334,7 +6470,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Package_TO_SOT_THT:TO-220-3_Horizontal_TabUp"
 			(at 162.56 119.38 0)
 			(effects
 				(font
@@ -6406,7 +6542,7 @@
 			)
 			(project "czesc_mocowa"
 				(path "/4feabfb7-faa0-4bbc-9dd7-e5fa6c0a0ab3"
-					(reference "Q?")
+					(reference "Q1")
 					(unit 1)
 				)
 			)
@@ -6422,7 +6558,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "452d7a8e-ebce-4e70-97f3-91383a24ed0a")
-		(property "Reference" "#PWR06"
+		(property "Reference" "#PWR0103"
 			(at 92.71 182.88 0)
 			(effects
 				(font
@@ -6476,6 +6612,12 @@
 					(unit 1)
 				)
 			)
+			(project "czesc_mocowa"
+				(path "/4feabfb7-faa0-4bbc-9dd7-e5fa6c0a0ab3"
+					(reference "#PWR0103")
+					(unit 1)
+				)
+			)
 		)
 	)
 	(symbol
@@ -6488,7 +6630,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "48ceaa22-6d72-4812-9e53-a656490726ec")
-		(property "Reference" "C11"
+		(property "Reference" "C9"
 			(at 184.15 115.9509 0)
 			(effects
 				(font
@@ -6497,7 +6639,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "C_Polarized"
+		(property "Value" "100uF"
 			(at 184.15 118.4909 0)
 			(effects
 				(font
@@ -6506,7 +6648,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:CP_Elec_10x10"
 			(at 181.3052 121.92 0)
 			(effects
 				(font
@@ -6546,6 +6688,12 @@
 					(unit 1)
 				)
 			)
+			(project "czesc_mocowa"
+				(path "/4feabfb7-faa0-4bbc-9dd7-e5fa6c0a0ab3"
+					(reference "C9")
+					(unit 1)
+				)
+			)
 		)
 	)
 	(symbol
@@ -6558,7 +6706,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "5283ea26-ce52-432a-84f1-4c58c0f4d35b")
-		(property "Reference" "U2"
+		(property "Reference" "U5"
 			(at 124.0633 110.49 0)
 			(effects
 				(font
@@ -6576,7 +6724,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Package_SO:SOIC-8-1EP_3.9x4.9mm_P1.27mm_EP2.29x3mm"
 			(at 121.92 125.73 0)
 			(effects
 				(font
@@ -6637,7 +6785,7 @@
 			)
 			(project "czesc_mocowa"
 				(path "/4feabfb7-faa0-4bbc-9dd7-e5fa6c0a0ab3"
-					(reference "U?")
+					(reference "U5")
 					(unit 1)
 				)
 			)
@@ -6653,7 +6801,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "5422b561-dcf5-484b-8252-d38213f20c40")
-		(property "Reference" "R6"
+		(property "Reference" "R5"
 			(at 118.11 50.8 90)
 			(effects
 				(font
@@ -6669,7 +6817,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_1210_3225Metric"
 			(at 118.11 48.768 90)
 			(effects
 				(font
@@ -6711,7 +6859,7 @@
 			)
 			(project "czesc_mocowa"
 				(path "/4feabfb7-faa0-4bbc-9dd7-e5fa6c0a0ab3"
-					(reference "R?")
+					(reference "R5")
 					(unit 1)
 				)
 			)
@@ -6727,7 +6875,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "57ac7114-209b-4521-9232-0b1e86c8eb44")
-		(property "Reference" "C2"
+		(property "Reference" "C5"
 			(at 153.67 124.8409 0)
 			(effects
 				(font
@@ -6745,7 +6893,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:CP_Elec_5x5.3"
 			(at 150.8252 130.81 0)
 			(effects
 				(font
@@ -6787,7 +6935,7 @@
 			)
 			(project "czesc_mocowa"
 				(path "/4feabfb7-faa0-4bbc-9dd7-e5fa6c0a0ab3"
-					(reference "C?")
+					(reference "C5")
 					(unit 1)
 				)
 			)
@@ -6803,7 +6951,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "590edb56-79e8-448f-9d70-cdc70c59c7be")
-		(property "Reference" "R8"
+		(property "Reference" "R1"
 			(at 105.41 162.56 90)
 			(effects
 				(font
@@ -6819,7 +6967,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_1210_3225Metric"
 			(at 105.41 170.688 90)
 			(effects
 				(font
@@ -6859,6 +7007,12 @@
 					(unit 1)
 				)
 			)
+			(project "czesc_mocowa"
+				(path "/4feabfb7-faa0-4bbc-9dd7-e5fa6c0a0ab3"
+					(reference "R1")
+					(unit 1)
+				)
+			)
 		)
 	)
 	(symbol
@@ -6871,7 +7025,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "5b6664d6-1c55-4e39-910c-1cbef415fa00")
-		(property "Reference" "C7"
+		(property "Reference" "C2"
 			(at 96.52 171.4499 0)
 			(effects
 				(font
@@ -6889,7 +7043,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_1206_3216Metric"
 			(at 93.6752 176.53 0)
 			(effects
 				(font
@@ -6929,6 +7083,12 @@
 					(unit 1)
 				)
 			)
+			(project "czesc_mocowa"
+				(path "/4feabfb7-faa0-4bbc-9dd7-e5fa6c0a0ab3"
+					(reference "C2")
+					(unit 1)
+				)
+			)
 		)
 	)
 	(symbol
@@ -6941,7 +7101,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "6053743d-8ac9-43ca-b715-1d3cdbcb1698")
-		(property "Reference" "Q4"
+		(property "Reference" "Q2"
 			(at 163.83 135.8899 0)
 			(effects
 				(font
@@ -6959,7 +7119,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Package_TO_SOT_THT:TO-220-3_Horizontal_TabUp"
 			(at 162.56 134.62 0)
 			(effects
 				(font
@@ -7031,7 +7191,7 @@
 			)
 			(project "czesc_mocowa"
 				(path "/4feabfb7-faa0-4bbc-9dd7-e5fa6c0a0ab3"
-					(reference "Q?")
+					(reference "Q2")
 					(unit 1)
 				)
 			)
@@ -7047,7 +7207,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "65bed066-fdd4-4469-999f-404404b6b2dd")
-		(property "Reference" "C3"
+		(property "Reference" "C4"
 			(at 153.67 23.2409 0)
 			(effects
 				(font
@@ -7056,7 +7216,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "C_Polarized"
+		(property "Value" "100uF"
 			(at 153.67 25.7809 0)
 			(effects
 				(font
@@ -7065,7 +7225,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:CP_Elec_10x10"
 			(at 150.8252 29.21 0)
 			(effects
 				(font
@@ -7107,7 +7267,7 @@
 			)
 			(project "czesc_mocowa"
 				(path "/4feabfb7-faa0-4bbc-9dd7-e5fa6c0a0ab3"
-					(reference "C?")
+					(reference "C4")
 					(unit 1)
 				)
 			)
@@ -7123,7 +7283,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "69dda2fb-31ee-41d8-8ec3-c262e6d34b5e")
-		(property "Reference" "#PWR?"
+		(property "Reference" "#PWR02"
 			(at 125.73 163.83 0)
 			(effects
 				(font
@@ -7195,7 +7355,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "705c351b-d7a8-4b4f-b2cb-cba410b9f432")
-		(property "Reference" "R1"
+		(property "Reference" "R10"
 			(at 156.21 69.85 90)
 			(effects
 				(font
@@ -7211,7 +7371,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_1210_3225Metric"
 			(at 156.21 67.818 90)
 			(effects
 				(font
@@ -7253,7 +7413,7 @@
 			)
 			(project "czesc_mocowa"
 				(path "/4feabfb7-faa0-4bbc-9dd7-e5fa6c0a0ab3"
-					(reference "R?")
+					(reference "R10")
 					(unit 1)
 				)
 			)
@@ -7269,7 +7429,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "7152b4fa-70a2-48cd-97f8-ebdde17723cd")
-		(property "Reference" "#PWR09"
+		(property "Reference" "#PWR0102"
 			(at 182.88 83.82 0)
 			(effects
 				(font
@@ -7323,6 +7483,12 @@
 					(unit 1)
 				)
 			)
+			(project "czesc_mocowa"
+				(path "/4feabfb7-faa0-4bbc-9dd7-e5fa6c0a0ab3"
+					(reference "#PWR0102")
+					(unit 1)
+				)
+			)
 		)
 	)
 	(symbol
@@ -7335,7 +7501,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "72820465-32fa-4902-b5e2-ad037ccbd655")
-		(property "Reference" "C?"
+		(property "Reference" "C1"
 			(at 162.56 176.5299 0)
 			(effects
 				(font
@@ -7353,7 +7519,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_1206_3216Metric"
 			(at 159.7152 181.61 0)
 			(effects
 				(font
@@ -7411,7 +7577,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "7973ae03-73ff-4574-8094-08aca069ad3a")
-		(property "Reference" "R?"
+		(property "Reference" "R4"
 			(at 149.86 151.13 90)
 			(effects
 				(font
@@ -7427,7 +7593,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_1210_3225Metric"
 			(at 149.86 155.702 90)
 			(effects
 				(font
@@ -7485,7 +7651,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "7aec7e19-6cae-4aaa-80e7-686ea92c6f18")
-		(property "Reference" "WEJ_48V_DC"
+		(property "Reference" "WEJ_48V_DC1"
 			(at 193.04 53.3399 0)
 			(effects
 				(font
@@ -7503,7 +7669,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Connector:Banana_Cliff_FCR7350B_S16N-PC_Horizontal"
 			(at 190.5 53.34 0)
 			(effects
 				(font
@@ -7545,7 +7711,7 @@
 			)
 			(project "czesc_mocowa"
 				(path "/4feabfb7-faa0-4bbc-9dd7-e5fa6c0a0ab3"
-					(reference "WEJ_48V_DC?")
+					(reference "WEJ_48V_DC1")
 					(unit 1)
 				)
 			)
@@ -7561,7 +7727,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "7cd7cc26-0493-4bf0-8a3c-3f97717153e6")
-		(property "Reference" "R7"
+		(property "Reference" "R6"
 			(at 135.89 105.41 90)
 			(effects
 				(font
@@ -7577,7 +7743,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_1210_3225Metric"
 			(at 135.89 113.538 90)
 			(effects
 				(font
@@ -7619,7 +7785,77 @@
 			)
 			(project "czesc_mocowa"
 				(path "/4feabfb7-faa0-4bbc-9dd7-e5fa6c0a0ab3"
-					(reference "R?")
+					(reference "R6")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C")
+		(at 144.78 58.42 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "86ae92f7-93b2-437c-9527-b83220fef188")
+		(property "Reference" "C13"
+			(at 148.59 57.1499 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "C"
+			(at 148.59 59.6899 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_1206_3216Metric"
+			(at 145.7452 62.23 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 144.78 58.42 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Unpolarized capacitor"
+			(at 144.78 58.42 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "841c6345-e609-4528-a1f3-5b79454d2ec7")
+		)
+		(pin "1"
+			(uuid "a8f55c30-5433-4058-9e8f-ca05c62babf3")
+		)
+		(instances
+			(project "czesc_mocowa"
+				(path "/4feabfb7-faa0-4bbc-9dd7-e5fa6c0a0ab3"
+					(reference "C13")
 					(unit 1)
 				)
 			)
@@ -7634,7 +7870,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "8e03624c-1ef2-4b9e-ac4f-2a0aeabc730f")
-		(property "Reference" "U5"
+		(property "Reference" "U2"
 			(at 32.6233 57.15 0)
 			(effects
 				(font
@@ -7805,7 +8041,7 @@
 			)
 			(project "czesc_mocowa"
 				(path "/4feabfb7-faa0-4bbc-9dd7-e5fa6c0a0ab3"
-					(reference "U?")
+					(reference "U2")
 					(unit 1)
 				)
 			)
@@ -7821,7 +8057,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "946b5ac5-ed70-405e-98db-0f5ac4d71641")
-		(property "Reference" "R3"
+		(property "Reference" "R11"
 			(at 175.26 149.8599 0)
 			(effects
 				(font
@@ -7839,7 +8075,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_1210_3225Metric"
 			(at 170.942 151.13 90)
 			(effects
 				(font
@@ -7881,7 +8117,7 @@
 			)
 			(project "czesc_mocowa"
 				(path "/4feabfb7-faa0-4bbc-9dd7-e5fa6c0a0ab3"
-					(reference "R?")
+					(reference "R11")
 					(unit 1)
 				)
 			)
@@ -7897,7 +8133,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "9b727621-06ad-4c7d-84a3-30c2a3ffe299")
-		(property "Reference" "C6"
+		(property "Reference" "C11"
 			(at 198.12 24.1299 0)
 			(effects
 				(font
@@ -7906,7 +8142,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "C"
+		(property "Value" "500pF"
 			(at 198.12 26.6699 0)
 			(effects
 				(font
@@ -7915,7 +8151,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_1206_3216Metric"
 			(at 195.2752 29.21 0)
 			(effects
 				(font
@@ -7957,7 +8193,7 @@
 			)
 			(project "czesc_mocowa"
 				(path "/4feabfb7-faa0-4bbc-9dd7-e5fa6c0a0ab3"
-					(reference "C?")
+					(reference "C11")
 					(unit 1)
 				)
 			)
@@ -7973,7 +8209,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "9c288131-8892-4070-8df2-f078e15d5a51")
-		(property "Reference" "#PWR05"
+		(property "Reference" "#PWR0106"
 			(at 180.34 39.37 0)
 			(effects
 				(font
@@ -8029,7 +8265,7 @@
 			)
 			(project "czesc_mocowa"
 				(path "/4feabfb7-faa0-4bbc-9dd7-e5fa6c0a0ab3"
-					(reference "#PWR?")
+					(reference "#PWR0106")
 					(unit 1)
 				)
 			)
@@ -8045,7 +8281,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "9d32ea8b-4e35-4440-b85f-1e01df5044b4")
-		(property "Reference" "D2"
+		(property "Reference" "D3"
 			(at 146.05 105.41 0)
 			(effects
 				(font
@@ -8121,7 +8357,7 @@
 			)
 			(project "czesc_mocowa"
 				(path "/4feabfb7-faa0-4bbc-9dd7-e5fa6c0a0ab3"
-					(reference "D?")
+					(reference "D3")
 					(unit 1)
 				)
 			)
@@ -8136,7 +8372,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "a6d0625f-5d81-485c-915a-94a3fad83fd0")
-		(property "Reference" "D3"
+		(property "Reference" "D2"
 			(at 138.7475 27.94 0)
 			(effects
 				(font
@@ -8194,7 +8430,7 @@
 			)
 			(project "czesc_mocowa"
 				(path "/4feabfb7-faa0-4bbc-9dd7-e5fa6c0a0ab3"
-					(reference "D?")
+					(reference "D2")
 					(unit 1)
 				)
 			)
@@ -8210,7 +8446,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "a8b2de20-d792-40d3-ad74-7efcb4fac278")
-		(property "Reference" "#PWR?"
+		(property "Reference" "#PWR03"
 			(at 158.75 189.23 0)
 			(effects
 				(font
@@ -8282,7 +8518,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "a9f5ca53-9057-42fc-a0e5-2be975911550")
-		(property "Reference" "U1"
+		(property "Reference" "U4"
 			(at 120.2533 50.8 0)
 			(effects
 				(font
@@ -8300,7 +8536,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Package_SO:SOIC-8-1EP_3.9x4.9mm_P1.27mm_EP2.29x3mm"
 			(at 118.11 66.04 0)
 			(effects
 				(font
@@ -8361,7 +8597,7 @@
 			)
 			(project "czesc_mocowa"
 				(path "/4feabfb7-faa0-4bbc-9dd7-e5fa6c0a0ab3"
-					(reference "U?")
+					(reference "U4")
 					(unit 1)
 				)
 			)
@@ -8377,7 +8613,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "ac571739-a7ba-4755-a037-cf12fe63d07d")
-		(property "Reference" "#PWR03"
+		(property "Reference" "#PWR0107"
 			(at 177.8 129.54 0)
 			(effects
 				(font
@@ -8431,6 +8667,12 @@
 					(unit 1)
 				)
 			)
+			(project "czesc_mocowa"
+				(path "/4feabfb7-faa0-4bbc-9dd7-e5fa6c0a0ab3"
+					(reference "#PWR0107")
+					(unit 1)
+				)
+			)
 		)
 	)
 	(symbol
@@ -8461,7 +8703,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Inductor_SMD:L_6.3x6.3_H3"
 			(at 134.62 31.75 0)
 			(effects
 				(font
@@ -8501,6 +8743,12 @@
 					(unit 1)
 				)
 			)
+			(project "czesc_mocowa"
+				(path "/4feabfb7-faa0-4bbc-9dd7-e5fa6c0a0ab3"
+					(reference "L1")
+					(unit 1)
+				)
+			)
 		)
 	)
 	(symbol
@@ -8513,7 +8761,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "b54457c1-8858-4909-bd95-3a8d340da3eb")
-		(property "Reference" "C10"
+		(property "Reference" "C7"
 			(at 176.53 116.8399 0)
 			(effects
 				(font
@@ -8531,7 +8779,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_1206_3216Metric"
 			(at 173.6852 121.92 0)
 			(effects
 				(font
@@ -8571,6 +8819,12 @@
 					(unit 1)
 				)
 			)
+			(project "czesc_mocowa"
+				(path "/4feabfb7-faa0-4bbc-9dd7-e5fa6c0a0ab3"
+					(reference "C7")
+					(unit 1)
+				)
+			)
 		)
 	)
 	(symbol
@@ -8583,7 +8837,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "b624b523-3ac8-4c31-b772-4556a71b4bbe")
-		(property "Reference" "#PWR?"
+		(property "Reference" "#PWR04"
 			(at 157.48 166.37 0)
 			(effects
 				(font
@@ -8655,7 +8909,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "b76906c3-c72a-468a-9a0d-785f20c98a5d")
-		(property "Reference" "#PWR07"
+		(property "Reference" "#PWR0109"
 			(at 67.31 138.43 0)
 			(effects
 				(font
@@ -8711,7 +8965,7 @@
 			)
 			(project "czesc_mocowa"
 				(path "/4feabfb7-faa0-4bbc-9dd7-e5fa6c0a0ab3"
-					(reference "#PWR?")
+					(reference "#PWR0109")
 					(unit 1)
 				)
 			)
@@ -8727,7 +8981,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "c044ccad-78cc-4806-942f-f8ce70f9f085")
-		(property "Reference" "C5"
+		(property "Reference" "C6"
 			(at 171.45 24.1299 0)
 			(effects
 				(font
@@ -8736,7 +8990,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "C"
+		(property "Value" "500pF"
 			(at 171.45 26.6699 0)
 			(effects
 				(font
@@ -8745,7 +8999,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_1206_3216Metric"
 			(at 168.6052 29.21 0)
 			(effects
 				(font
@@ -8787,7 +9041,7 @@
 			)
 			(project "czesc_mocowa"
 				(path "/4feabfb7-faa0-4bbc-9dd7-e5fa6c0a0ab3"
-					(reference "C?")
+					(reference "C6")
 					(unit 1)
 				)
 			)
@@ -8803,7 +9057,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "c2f75ae9-e012-4a49-a8f7-50a95c8934e7")
-		(property "Reference" "C4"
+		(property "Reference" "C12"
 			(at 209.55 23.2409 0)
 			(effects
 				(font
@@ -8812,7 +9066,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "C_Polarized"
+		(property "Value" "100uF"
 			(at 209.55 25.7809 0)
 			(effects
 				(font
@@ -8821,7 +9075,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:CP_Elec_10x10"
 			(at 206.7052 29.21 0)
 			(effects
 				(font
@@ -8863,7 +9117,7 @@
 			)
 			(project "czesc_mocowa"
 				(path "/4feabfb7-faa0-4bbc-9dd7-e5fa6c0a0ab3"
-					(reference "C?")
+					(reference "C12")
 					(unit 1)
 				)
 			)
@@ -8879,7 +9133,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "c77c841b-74ec-459f-92ee-38b334b635ff")
-		(property "Reference" "WYJSCIE"
+		(property "Reference" "WYJSCIE1"
 			(at 217.17 83.8199 0)
 			(effects
 				(font
@@ -8897,7 +9151,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Connector:Banana_Cliff_FCR7350B_S16N-PC_Horizontal"
 			(at 214.63 83.82 0)
 			(effects
 				(font
@@ -8939,7 +9193,7 @@
 			)
 			(project "czesc_mocowa"
 				(path "/4feabfb7-faa0-4bbc-9dd7-e5fa6c0a0ab3"
-					(reference "WYJSCIE?")
+					(reference "WYJSCIE1")
 					(unit 1)
 				)
 			)
@@ -8955,7 +9209,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "e5ad2387-3a6f-46a0-982e-952db2a85767")
-		(property "Reference" "#PWR08"
+		(property "Reference" "#PWR0105"
 			(at 172.72 165.1 0)
 			(effects
 				(font
@@ -9009,6 +9263,12 @@
 					(unit 1)
 				)
 			)
+			(project "czesc_mocowa"
+				(path "/4feabfb7-faa0-4bbc-9dd7-e5fa6c0a0ab3"
+					(reference "#PWR0105")
+					(unit 1)
+				)
+			)
 		)
 	)
 	(symbol
@@ -9021,7 +9281,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "eac2c405-f58f-4f56-bb22-b57b11451f19")
-		(property "Reference" "#PWR02"
+		(property "Reference" "#PWR0108"
 			(at 118.11 90.17 0)
 			(effects
 				(font
@@ -9077,7 +9337,7 @@
 			)
 			(project "czesc_mocowa"
 				(path "/4feabfb7-faa0-4bbc-9dd7-e5fa6c0a0ab3"
-					(reference "#PWR?")
+					(reference "#PWR0108")
 					(unit 1)
 				)
 			)
@@ -9093,7 +9353,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "eb111e5f-978e-4d1e-ba3f-32afda550b30")
-		(property "Reference" "U?"
+		(property "Reference" "U1"
 			(at 180.34 15.24 0)
 			(effects
 				(font
@@ -9109,7 +9369,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Package_TO_SOT_SMD:SOT-223-3_TabPin2"
+		(property "Footprint" "Package_TO_SOT_THT:TO-220-3_Horizontal_TabUp"
 			(at 180.34 16.51 0)
 			(effects
 				(font
@@ -9170,7 +9430,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "f293bb95-ac88-4c06-9732-7f011d628d20")
-		(property "Reference" "R?"
+		(property "Reference" "R2"
 			(at 130.81 147.32 90)
 			(effects
 				(font
@@ -9186,7 +9446,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_1210_3225Metric"
 			(at 130.81 155.448 90)
 			(effects
 				(font
@@ -9244,7 +9504,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "f8192d3c-f082-4db7-a572-990438f12895")
-		(property "Reference" "R5"
+		(property "Reference" "R8"
 			(at 144.78 130.81 90)
 			(effects
 				(font
@@ -9260,7 +9520,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_1210_3225Metric"
 			(at 144.78 138.938 90)
 			(effects
 				(font
@@ -9302,7 +9562,7 @@
 			)
 			(project "czesc_mocowa"
 				(path "/4feabfb7-faa0-4bbc-9dd7-e5fa6c0a0ab3"
-					(reference "R?")
+					(reference "R8")
 					(unit 1)
 				)
 			)
@@ -9318,7 +9578,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "f9b130cc-a509-4a13-b925-acef0d11fbc4")
-		(property "Reference" "U3"
+		(property "Reference" "U6"
 			(at 133.9281 158.75 0)
 			(effects
 				(font
@@ -9386,6 +9646,12 @@
 					(unit 1)
 				)
 			)
+			(project "czesc_mocowa"
+				(path "/4feabfb7-faa0-4bbc-9dd7-e5fa6c0a0ab3"
+					(reference "U6")
+					(unit 1)
+				)
+			)
 		)
 	)
 	(symbol
@@ -9398,7 +9664,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "fc92f15e-84aa-4e68-8ec5-b1447fd48e64")
-		(property "Reference" "Q2"
+		(property "Reference" "Q4"
 			(at 171.45 93.9799 0)
 			(effects
 				(font
@@ -9416,7 +9682,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Package_TO_SOT_THT:TO-220-3_Horizontal_TabUp"
 			(at 170.18 92.71 0)
 			(effects
 				(font
@@ -9488,7 +9754,7 @@
 			)
 			(project "czesc_mocowa"
 				(path "/4feabfb7-faa0-4bbc-9dd7-e5fa6c0a0ab3"
-					(reference "Q?")
+					(reference "Q4")
 					(unit 1)
 				)
 			)
@@ -9504,7 +9770,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "fecf34cf-c088-43fd-80a2-2ce4f8fceead")
-		(property "Reference" "U4"
+		(property "Reference" "U3"
 			(at 74.5333 115.57 0)
 			(effects
 				(font
@@ -9658,7 +9924,7 @@
 			)
 			(project "czesc_mocowa"
 				(path "/4feabfb7-faa0-4bbc-9dd7-e5fa6c0a0ab3"
-					(reference "U?")
+					(reference "U3")
 					(unit 1)
 				)
 			)
