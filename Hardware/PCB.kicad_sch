@@ -5829,7 +5829,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Connector_Molex:Molex_SL_171971-0015_1x15_P2.54mm_Vertical"
+		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x15_P2.54mm_Vertical"
 			(at 77.47 87.63 0)
 			(effects
 				(font
@@ -6744,7 +6744,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Connector_Molex:Molex_SL_171971-0015_1x15_P2.54mm_Vertical"
+		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x15_P2.54mm_Vertical"
 			(at 87.63 87.63 0)
 			(effects
 				(font
@@ -7999,7 +7999,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x19_P2.54mm_Vertical"
 			(at 27.94 90.17 0)
 			(effects
 				(font
@@ -8119,7 +8119,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x19_P2.54mm_Vertical"
 			(at 40.64 90.17 0)
 			(effects
 				(font
