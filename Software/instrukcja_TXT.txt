@@ -1,0 +1,44 @@
+1. Instrukcja połączenia sprzętowego
+
+Połączenia UART między ESP32 a STM32:
+ESP32 GPIO16 (RX) ↔ STM32 USART1 TX (PA9)
+ESP32 GPIO17 (TX) ↔ STM32 USART1 RX (PA10)
+Wspólne GND
+
+Zasilanie:
+Zapewnij wspólne masy (GND) między modułami
+ESP32 można zasilać przez USB lub zewnętrznym zasilaczem 5V
+STM32 zasilaj zgodnie z wymaganiami projektu (3.3V)
+
+Połączenie z aplikacją Flask:
+Podłącz komputer z aplikacją Flask do tej samej sieci WiFi co ESP32
+Alternatywnie: Podłącz ESP32 do komputera przez USB i użyj portu szeregowego
+
+2. Konfiguracja środowiska
+Dla STM32:
+Użyj STM32CubeIDE do zaimportowania projektu
+Skonfiguruj peryferia w CubeMX:
+	USART1 w trybie asynchronicznym (115200 baud)
+	TIM1 w trybie PWM Generation
+	ADC1 do pomiarów
+
+Dla ESP32:
+Użyj PlatformIO lub Arduino IDE
+Zainstaluj wymagane biblioteki (WiFi, WebServer, ArduinoJson)
+
+Dla aplikacji Flask:
+Zainstaluj wymagane pakiety: flask, pyserial
+Uruchom aplikację: python app.py
+
+3. Testowanie systemu
+Test komunikacji UART:
+	Sprawdź czy ESP32 i STM32 wymieniają poprawne ramki
+	ożna użyć terminala szeregowego do debugowania
+
+Test interfejsu webowego:
+	ołącz się z WiFi stworzonym przez ESP32
+	twórz w przeglądarce adres IP ESP32 (domyślnie 192.168.4.1)
+
+Test aplikacji Flask:
+	ruchom aplikację i otwórz w przeglądarce http://localhost:5000
+	prawdź czy zmiany są prawidłowo przesyłane do ESP32 i STM32

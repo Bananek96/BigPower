@@ -1,0 +1,588 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sterowanie Falownikiem Jednofazowym</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        :root {
+            --primary: #3498db;
+            --secondary: #2ecc71;
+            --danger: #e74c3c;
+            --dark: #2c3e50;
+            --light: #ecf0f1;
+            --gray: #95a5a6;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Roboto', sans-serif;
+            background-color: #f5f7fa;
+            color: var(--dark);
+            line-height: 1.6;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 30px;
+            padding: 20px 0;
+            border-bottom: 1px solid #ddd;
+        }
+
+        h1 {
+            color: var(--dark);
+            margin-bottom: 10px;
+        }
+
+        .dashboard {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+        }
+
+        .control-panel, .status-panel {
+            background: white;
+            border-radius: 10px;
+            padding: 25px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .panel-title {
+            font-size: 1.5rem;
+            margin-bottom: 20px;
+            color: var(--dark);
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .panel-title i {
+            color: var(--primary);
+        }
+
+        .control-group {
+            margin-bottom: 25px;
+        }
+
+        .control-label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: 500;
+        }
+
+        .frequency-slider {
+            width: 100%;
+            margin: 15px 0;
+            -webkit-appearance: none;
+            height: 10px;
+            border-radius: 5px;
+            background: #ddd;
+            outline: none;
+        }
+
+        .frequency-slider::-webkit-slider-thumb {
+            -webkit-appearance: none;
+            appearance: none;
+            width: 25px;
+            height: 25px;
+            border-radius: 50%;
+            background: var(--primary);
+            cursor: pointer;
+        }
+
+        .frequency-display {
+            text-align: center;
+            font-size: 1.8rem;
+            font-weight: 500;
+            margin: 10px 0;
+        }
+
+        .frequency-display span {
+            font-size: 1rem;
+            color: var(--gray);
+        }
+
+        .btn-group {
+            display: flex;
+            gap: 15px;
+            margin-top: 20px;
+        }
+
+        .btn {
+            padding: 12px 25px;
+            border: none;
+            border-radius: 5px;
+            font-size: 1rem;
+            font-weight: 500;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            flex: 1;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 8px;
+        }
+
+        .btn-primary {
+            background-color: var(--primary);
+            color: white;
+        }
+
+        .btn-primary:hover {
+            background-color: #2980b9;
+        }
+
+        .btn-danger {
+            background-color: var(--danger);
+            color: white;
+        }
+
+        .btn-danger:hover {
+            background-color: #c0392b;
+        }
+
+        .btn-success {
+            background-color: var(--secondary);
+            color: white;
+        }
+
+        .btn-success:hover {
+            background-color: #27ae60;
+        }
+
+        .modulation-select {
+            display: flex;
+            gap: 15px;
+            margin-top: 15px;
+        }
+
+        .modulation-option {
+            flex: 1;
+            padding: 15px;
+            border: 2px solid #ddd;
+            border-radius: 5px;
+            text-align: center;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        .modulation-option:hover {
+            border-color: var(--primary);
+        }
+
+        .modulation-option.active {
+            border-color: var(--primary);
+            background-color: rgba(52, 152, 219, 0.1);
+        }
+
+        .modulation-option i {
+            font-size: 1.5rem;
+            margin-bottom: 10px;
+            color: var(--primary);
+        }
+
+        .status-item {
+            display: flex;
+            justify-content: space-between;
+            padding: 15px 0;
+            border-bottom: 1px solid #eee;
+        }
+
+        .status-item:last-child {
+            border-bottom: none;
+        }
+
+        .status-label {
+            font-weight: 500;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .status-value {
+            font-weight: 500;
+        }
+
+        .status-icon {
+            width: 24px;
+            text-align: center;
+        }
+
+        .status-running {
+            color: var(--secondary);
+        }
+
+        .status-stopped {
+            color: var(--danger);
+        }
+
+        .gauge {
+            height: 10px;
+            background: #eee;
+            border-radius: 5px;
+            margin-top: 5px;
+            overflow: hidden;
+        }
+
+        .gauge-fill {
+            height: 100%;
+            background: var(--secondary);
+            width: 0%;
+            transition: width 0.5s ease;
+        }
+
+        .error-alert {
+            background-color: #f8d7da;
+            color: #721c24;
+            padding: 15px;
+            border-radius: 5px;
+            margin-top: 20px;
+            display: none;
+        }
+
+        @media (max-width: 768px) {
+            .dashboard {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1><i class="fas fa-bolt"></i> Sterowanie Falownikiem Jednofazowym</h1>
+            <p>System zdalnego sterowania falownikiem z modulacją SPWM/SVPWM</p>
+        </header>
+
+        <div class="dashboard">
+            <div class="control-panel">
+                <h2 class="panel-title"><i class="fas fa-sliders-h"></i> Panel sterowania</h2>
+
+                <div class="control-group">
+                    <label class="control-label">Częstotliwość wyjściowa:</label>
+                    <input type="range" min="1000" max="20000" step="100" value="5000" class="frequency-slider" id="frequencySlider">
+                    <div class="frequency-display">
+                        <span id="frequencyValue">5000</span> <span>Hz</span>
+                    </div>
+                </div>
+
+                <div class="control-group">
+                    <label class="control-label">Typ modulacji:</label>
+                    <div class="modulation-select">
+                        <div class="modulation-option active" data-mod="0">
+                            <i class="fas fa-sine-wave"></i>
+                            <div>SPWM</div>
+                        </div>
+                        <div class="modulation-option" data-mod="1">
+                            <i class="fas fa-wave-square"></i>
+                            <div>SVPWM</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="btn-group">
+                    <button class="btn btn-success" id="startBtn">
+                        <i class="fas fa-play"></i> Start
+                    </button>
+                    <button class="btn btn-danger" id="stopBtn">
+                        <i class="fas fa-stop"></i> Stop
+                    </button>
+                </div>
+
+                <div class="error-alert" id="errorAlert">
+                    <i class="fas fa-exclamation-triangle"></i> <span id="errorMessage"></span>
+                </div>
+            </div>
+
+            <div class="status-panel">
+                <h2 class="panel-title"><i class="fas fa-chart-line"></i> Status systemu</h2>
+
+                <div class="status-item">
+                    <div class="status-label">
+                        <div class="status-icon">
+                            <i class="fas fa-power-off"></i>
+                        </div>
+                        <div>Status:</div>
+                    </div>
+                    <div class="status-value" id="statusValue">
+                        <span class="status-stopped">Zatrzymany</span>
+                    </div>
+                </div>
+
+                <div class="status-item">
+                    <div class="status-label">
+                        <div class="status-icon">
+                            <i class="fas fa-wave-square"></i>
+                        </div>
+                        <div>Typ modulacji:</div>
+                    </div>
+                    <div class="status-value" id="modulationValue">SPWM</div>
+                </div>
+
+                <div class="status-item">
+                    <div class="status-label">
+                        <div class="status-icon">
+                            <i class="fas fa-tachometer-alt"></i>
+                        </div>
+                        <div>Częstotliwość:</div>
+                    </div>
+                    <div class="status-value" id="currentFrequency">5000 Hz</div>
+                </div>
+
+                <div class="status-item">
+                    <div class="status-label">
+                        <div class="status-icon">
+                            <i class="fas fa-bolt"></i>
+                        </div>
+                        <div>Napięcie wyjściowe:</div>
+                    </div>
+                    <div class="status-value" id="outputVoltage">0 V</div>
+                </div>
+
+                <div class="status-item">
+                    <div class="status-label">
+                        <div class="status-icon">
+                            <i class="fas fa-current"></i>
+                        </div>
+                        <div>Prąd wyjściowy:</div>
+                    </div>
+                    <div class="status-value" id="outputCurrent">0 A</div>
+                </div>
+
+                <div class="status-item">
+                    <div class="status-label">
+                        <div class="status-icon">
+                            <i class="fas fa-thermometer-half"></i>
+                        </div>
+                        <div>Temperatura:</div>
+                    </div>
+                    <div class="status-value" id="temperature">25 °C</div>
+                </div>
+
+                <div class="status-item">
+                    <div class="status-label">
+                        <div class="status-icon">
+                            <i class="fas fa-microchip"></i>
+                        </div>
+                        <div>Obciążenie:</div>
+                    </div>
+                    <div>
+                        <div id="loadPercentage">0%</div>
+                        <div class="gauge">
+                            <div class="gauge-fill" id="loadGauge"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script>
+        // Elementy interfejsu
+        const frequencySlider = document.getElementById('frequencySlider');
+        const frequencyValue = document.getElementById('frequencyValue');
+        const startBtn = document.getElementById('startBtn');
+        const stopBtn = document.getElementById('stopBtn');
+        const modulationOptions = document.querySelectorAll('.modulation-option');
+        const errorAlert = document.getElementById('errorAlert');
+        const errorMessage = document.getElementById('errorMessage');
+
+        // Elementy statusu
+        const statusValue = document.getElementById('statusValue');
+        const modulationValue = document.getElementById('modulationValue');
+        const currentFrequency = document.getElementById('currentFrequency');
+        const outputVoltage = document.getElementById('outputVoltage');
+        const outputCurrent = document.getElementById('outputCurrent');
+        const temperature = document.getElementById('temperature');
+        const loadPercentage = document.getElementById('loadPercentage');
+        const loadGauge = document.getElementById('loadGauge');
+
+        // Aktualny stan
+        let currentModulation = 0; // 0 = SPWM, 1 = SVPWM
+        let isRunning = false;
+
+        // Inicjalizacja
+        updateStatus();
+
+        // Aktualizacja wartości częstotliwości
+        frequencySlider.addEventListener('input', function() {
+            frequencyValue.textContent = this.value;
+        });
+
+        // Zmiana częstotliwości - wysłanie komendy
+        frequencySlider.addEventListener('change', function() {
+            const freq = parseInt(this.value);
+            setFrequency(freq);
+        });
+
+        // Wybór typu modulacji
+        modulationOptions.forEach(option => {
+            option.addEventListener('click', function() {
+                modulationOptions.forEach(opt => opt.classList.remove('active'));
+                this.classList.add('active');
+                currentModulation = parseInt(this.dataset.mod);
+                setModulation(currentModulation);
+            });
+        });
+
+        // Przyciski start/stop
+        startBtn.addEventListener('click', function() {
+            startInverter();
+        });
+
+        stopBtn.addEventListener('click', function() {
+            stopInverter();
+        });
+
+        // Funkcje do komunikacji z backendem
+        async function setFrequency(freq) {
+            try {
+                const response = await fetch('/api/set_frequency', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json',
+                    },
+                    body: JSON.stringify({ frequency: freq }),
+                });
+
+                const data = await response.json();
+                if (data.status === 'success') {
+                    showSuccess('Częstotliwość zaktualizowana');
+                } else {
+                    showError(data.message);
+                }
+            } catch (error) {
+                showError('Błąd komunikacji z serwerem');
+            }
+        }
+
+        async function setModulation(modType) {
+            try {
+                const response = await fetch('/api/set_modulation', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json',
+                    },
+                    body: JSON.stringify({ mod_type: modType }),
+                });
+
+                const data = await response.json();
+                if (data.status === 'success') {
+                    showSuccess('Typ modulacji zaktualizowany');
+                } else {
+                    showError(data.message);
+                }
+            } catch (error) {
+                showError('Błąd komunikacji z serwerem');
+            }
+        }
+
+        async function startInverter() {
+            try {
+                const response = await fetch('/api/start', {
+                    method: 'POST',
+                });
+
+                const data = await response.json();
+                if (data.status === 'success') {
+                    showSuccess('Falownik uruchomiony');
+                    isRunning = true;
+                    updateStatus();
+                } else {
+                    showError(data.message);
+                }
+            } catch (error) {
+                showError('Błąd komunikacji z serwerem');
+            }
+        }
+
+        async function stopInverter() {
+            try {
+                const response = await fetch('/api/stop', {
+                    method: 'POST',
+                });
+
+                const data = await response.json();
+                if (data.status === 'success') {
+                    showSuccess('Falownik zatrzymany');
+                    isRunning = false;
+                    updateStatus();
+                } else {
+                    showError(data.message);
+                }
+            } catch (error) {
+                showError('Błąd komunikacji z serwerem');
+            }
+        }
+
+        // Aktualizacja statusu
+        async function updateStatus() {
+            try {
+                const response = await fetch('/api/status');
+                const status = await response.json();
+
+                // Aktualizacja interfejsu
+                currentFrequency.textContent = `${status.frequency} Hz`;
+                modulationValue.textContent = status.modulation;
+
+                if (status.is_running) {
+                    statusValue.innerHTML = '<span class="status-running">Działa</span>';
+                } else {
+                    statusValue.innerHTML = '<span class="status-stopped">Zatrzymany</span>';
+                }
+
+                outputVoltage.textContent = `${status.output_voltage.toFixed(1)} V`;
+                outputCurrent.textContent = `${status.output_current.toFixed(2)} A`;
+                temperature.textContent = `${status.temperature.toFixed(1)} °C`;
+
+                // Oblicz obciążenie (symulacja)
+                const load = status.is_running ?
+                    Math.min(100, (status.output_current / 8) * 100) : 0;
+                loadPercentage.textContent = `${load.toFixed(0)}%`;
+                loadGauge.style.width = `${load}%`;
+
+                if (status.error) {
+                    showError(status.error);
+                } else {
+                    hideError();
+                }
+
+            } catch (error) {
+                console.error('Błąd aktualizacji statusu:', error);
+            }
+        }
+
+        // Pokazywanie komunikatów
+        function showError(message) {
+            errorMessage.textContent = message;
+            errorAlert.style.display = 'block';
+        }
+
+        function hideError() {
+            errorAlert.style.display = 'none';
+        }
+
+        function showSuccess(message) {
+            // W rzeczywistości można użyć np. toast notification
+            console.log('Sukces:', message);
+        }
+
+        // Automatyczna aktualizacja statusu co 2 sekundy
+        setInterval(updateStatus, 2000);
+    </script>
+</body>
+</html>

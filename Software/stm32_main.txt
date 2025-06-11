@@ -1,0 +1,207 @@
+#include "main.h"
+#include "stm32l4xx_hal.h"
+#include "string.h"
+#include "stdio.h"
+
+// Definicje UART
+UART_HandleTypeDef huart1;
+
+// Definicje TIMER (PWM)
+TIM_HandleTypeDef htim1;
+
+// Definicje ADC
+ADC_HandleTypeDef hadc1;
+
+// Struktura ramki UART (zgodna z ESP32)
+#pragma pack(push, 1)
+typedef struct {
+    uint8_t start;     // 0xA5
+    uint8_t command;   // 0x01-0xFF
+    uint8_t length;    // 0-32
+    uint8_t data[32];  // Dane polecenia
+    uint8_t checksum;  // XOR wszystkich pól
+    uint8_t stop;      // 0x5A
+} UART_Frame;
+#pragma pack(pop)
+
+// Komendy
+#define CMD_SET_FREQ  0x01
+#define CMD_SET_MOD   0x02
+#define CMD_START     0x10
+#define CMD_STOP      0x11
+#define CMD_GET_TELEMETRY 0x20
+
+// Zmienne globalne
+volatile uint32_t pwmFrequency = 5000; // Domyślna częstotliwość 5kHz
+volatile uint8_t modulationType = 0;   // 0=SPWM, 1=SVPWM
+volatile uint8_t systemRunning = 0;
+float outputVoltage = 0.0f;
+float outputCurrent = 0.0f;
+float temperature = 25.0f;
+
+// Prototypy funkcji
+void SystemClock_Config(void);
+static void MX_GPIO_Init(void);
+static void MX_USART1_UART_Init(void);
+static void MX_TIM1_Init(void);
+static void MX_ADC1_Init(void);
+void updatePWM(void);
+void generateSPWM(void);
+void generateSVPWM(void);
+void readSensors(void);
+uint8_t calculateChecksum(UART_Frame* frame);
+void sendUARTResponse(uint8_t command, uint8_t* data, uint8_t length);
+void processUARTCommand(UART_Frame* frame);
+
+int main(void) {
+    HAL_Init();
+    SystemClock_Config();
+    MX_GPIO_Init();
+    MX_USART1_UART_Init();
+    MX_TIM1_Init();
+    MX_ADC1_Init();
+
+    // Start ADC
+    HAL_ADC_Start(&hadc1);
+
+    // Inicjalizacja PWM
+    HAL_TIM_PWM_Start(&htim1, TIM_CHANNEL_1);
+    HAL_TIM_PWM_Start(&htim1, TIM_CHANNEL_2);
+    updatePWM();
+
+    // Bufor odbiorczy UART
+    UART_Frame rxFrame;
+    HAL_UART_Receive_IT(&huart1, (uint8_t*)&rxFrame, sizeof(UART_Frame));
+
+    while (1) {
+        // Odczyt sensorów
+        readSensors();
+        
+        // Wysyłanie telemetrii co 500ms
+        static uint32_t lastTelemetry = 0;
+        if (HAL_GetTick() - lastTelemetry > 500) {
+            uint8_t telemetryData[12];
+            memcpy(&telemetryData[0], &pwmFrequency, 4);
+            memcpy(&telemetryData[4], &outputVoltage, 4);
+            memcpy(&telemetryData[8], &outputCurrent, 4);
+            
+            sendUARTResponse(CMD_GET_TELEMETRY, telemetryData, 12);
+            lastTelemetry = HAL_GetTick();
+        }
+        
+        HAL_Delay(10);
+    }
+}
+
+// Przerwanie odbioru UART
+void HAL_UART_RxCpltCallback(UART_HandleTypeDef *huart) {
+    if (huart->Instance == USART1) {
+        UART_Frame* frame = (UART_Frame*)huart->pRxBuffPtr;
+        
+        // Sprawdź ramkę
+        if (frame->start == 0xA5 && frame->stop == 0x5A && 
+            frame->checksum == calculateChecksum(frame)) {
+            processUARTCommand(frame);
+        }
+        
+        // Przygotuj się na następną ramkę
+        HAL_UART_Receive_IT(&huart1, (uint8_t*)frame, sizeof(UART_Frame));
+    }
+}
+
+// Przetwarzanie komend UART
+void processUARTCommand(UART_Frame* frame) {
+    switch(frame->command) {
+        case CMD_SET_FREQ:
+            pwmFrequency = (frame->data[0] << 8) | frame->data[1];
+            updatePWM();
+            break;
+            
+        case CMD_SET_MOD:
+            modulationType = frame->data[0];
+            updatePWM();
+            break;
+            
+        case CMD_START:
+            systemRunning = 1;
+            HAL_TIM_PWM_Start(&htim1, TIM_CHANNEL_1);
+            HAL_TIM_PWM_Start(&htim1, TIM_CHANNEL_2);
+            break;
+            
+        case CMD_STOP:
+            systemRunning = 0;
+            HAL_TIM_PWM_Stop(&htim1, TIM_CHANNEL_1);
+            HAL_TIM_PWM_Stop(&htim1, TIM_CHANNEL_2);
+            break;
+            
+        case CMD_GET_TELEMETRY:
+            // Odpowiedź jest wysyłana w głównej pętli
+            break;
+    }
+}
+
+// Aktualizacja parametrów PWM
+void updatePWM() {
+    uint32_t arr = (SystemCoreClock / pwmFrequency) - 1;
+    __HAL_TIM_SET_AUTORELOAD(&htim1, arr);
+    __HAL_TIM_SET_COMPARE(&htim1, TIM_CHANNEL_1, arr/2);
+    __HAL_TIM_SET_COMPARE(&htim1, TIM_CHANNEL_2, arr/2);
+    
+    if (modulationType == 0) {
+        generateSPWM();
+    } else {
+        generateSVPWM();
+    }
+}
+
+// Generowanie SPWM (uproszczone)
+void generateSPWM() {
+    // Tutaj implementacja algorytmu SPWM
+    // W rzeczywistości użyj DMA i tablicy wzorców
+}
+
+// Generowanie SVPWM (uproszczone)
+void generateSVPWM() {
+    // Tutaj implementacja algorytmu SVPWM
+}
+
+// Odczyt sensorów
+void readSensors() {
+    // Przykładowy odczyt ADC (potrzebna kalibracja)
+    uint32_t adcValue = HAL_ADC_GetValue(&hadc1);
+    
+    // Symulacja odczytów - w rzeczywistości implementuj prawdziwe pomiary
+    temperature = 25.0f + (systemRunning ? (pwmFrequency / 1000.0f) : 0);
+    outputVoltage = systemRunning ? 220.0f : 0;
+    outputCurrent = systemRunning ? 1.5f : 0;
+}
+
+// Wysyłanie odpowiedzi UART
+void sendUARTResponse(uint8_t command, uint8_t* data, uint8_t length) {
+    UART_Frame frame;
+    frame.start = 0xA5;
+    frame.command = command;
+    frame.length = length;
+    memcpy(frame.data, data, length);
+    frame.checksum = calculateChecksum(&frame);
+    frame.stop = 0x5A;
+    
+    HAL_UART_Transmit(&huart1, (uint8_t*)&frame, sizeof(frame), 100);
+}
+
+// Obliczanie sumy kontrolnej
+uint8_t calculateChecksum(UART_Frame* frame) {
+    uint8_t checksum = 0;
+    checksum ^= frame->start;
+    checksum ^= frame->command;
+    checksum ^= frame->length;
+    
+    for (uint8_t i = 0; i < frame->length; i++) {
+        checksum ^= frame->data[i];
+    }
+    
+    return checksum;
+}
+
+// Pozostałe funkcje generowane przez CubeMX (MX_USART1_UART_Init, MX_TIM1_Init, itp.)
+// ...

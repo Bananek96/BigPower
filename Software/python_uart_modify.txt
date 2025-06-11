@@ -1,0 +1,57 @@
+import serial
+import serial.tools.list_ports
+
+# Znajdź port UART do którego podłączony jest ESP32
+def find_esp32_port():
+    ports = serial.tools.list_ports.comports()
+    for port in ports:
+        if 'USB' in port.description or 'Serial' in port.description:
+            return port.device
+    return None
+
+# Inicjalizacja połączenia UART
+uart_port = find_esp32_port()
+if uart_port:
+    ser = serial.Serial(uart_port, 115200, timeout=1)
+else:
+    print("Nie znaleziono portu ESP32. Uruchamiam w trybie symulacji.")
+    ser = None
+
+# Modyfikacja funkcji send_uart_command
+def send_uart_command(command, data=None):
+    if ser is None:
+        print(f"Symulacja: Wysłano komendę {command}, dane: {data}")
+        # Symulacja odpowiedzi
+        return
+    
+    # Konwersja komendy na odpowiednią ramkę UART
+    if command == 'SET_FREQ':
+        cmd_byte = 0x01
+        data_bytes = [(data >> 8) & 0xFF, data & 0xFF]
+    elif command == 'SET_MOD':
+        cmd_byte = 0x02
+        data_bytes = [data]
+    elif command == 'START':
+        cmd_byte = 0x10
+        data_bytes = []
+    elif command == 'STOP':
+        cmd_byte = 0x11
+        data_bytes = []
+    
+    # Budowanie ramki UART
+    frame = bytearray()
+    frame.append(0xA5)  # Start byte
+    frame.append(cmd_byte)  # Command
+    frame.append(len(data_bytes))  # Length
+    frame.extend(data_bytes)  # Data
+    
+    # Oblicz sumę kontrolną
+    checksum = 0
+    for byte in frame:
+        checksum ^= byte
+    frame.append(checksum)
+    
+    frame.append(0x5A)  # Stop byte
+    
+    # Wysyłanie ramki
+    ser.write(frame)
