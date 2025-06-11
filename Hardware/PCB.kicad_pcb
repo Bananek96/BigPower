@@ -1340,7 +1340,7 @@
 		(descr "Mounting Hole 3.2mm, M3, DIN965")
 		(tags "mounting hole 3.2mm m3 din965")
 		(property "Reference" "H3"
-			(at 0 -3.8 0)
+			(at 0.15 -5.23 0)
 			(layer "F.SilkS")
 			(uuid "923a53ec-7a2e-42ed-abf8-e68d5c96777a")
 			(effects
@@ -1351,7 +1351,7 @@
 			)
 		)
 		(property "Value" "+48V Vcc"
-			(at 0 3.8 0)
+			(at 0 6.07 0)
 			(layer "F.Fab")
 			(uuid "5ad18930-28e7-405a-9a46-f1fdf7e8d257")
 			(effects
@@ -6384,7 +6384,7 @@
 		(descr "Mounting Hole 3.2mm, M3, DIN965")
 		(tags "mounting hole 3.2mm m3 din965")
 		(property "Reference" "H1"
-			(at 0 -3.8 0)
+			(at 0.1 -5.28 0)
 			(layer "F.SilkS")
 			(uuid "278dcd6b-9d04-475e-ae62-fd73c00e639d")
 			(effects
@@ -6395,7 +6395,7 @@
 			)
 		)
 		(property "Value" "U wyj"
-			(at 0 3.8 0)
+			(at -0.05 5.32 0)
 			(layer "F.Fab")
 			(uuid "87608b62-32a0-4caf-8647-e1c811ecd3bf")
 			(effects
@@ -8908,7 +8908,7 @@
 		(descr "Mounting Hole 3.2mm, M3, DIN965")
 		(tags "mounting hole 3.2mm m3 din965")
 		(property "Reference" "H2"
-			(at 0 -3.8 0)
+			(at 0 -5.33 0)
 			(layer "F.SilkS")
 			(uuid "b599f30f-118c-437f-bbc9-89093fa524b8")
 			(effects
@@ -8919,7 +8919,7 @@
 			)
 		)
 		(property "Value" "U wyj"
-			(at 0 3.8 0)
+			(at -0.15 5.37 0)
 			(layer "F.Fab")
 			(uuid "bbca0ed7-6b13-4019-9e44-b5cf20159d98")
 			(effects
@@ -9298,7 +9298,7 @@
 		(descr "Mounting Hole 3.2mm, M3, DIN965")
 		(tags "mounting hole 3.2mm m3 din965")
 		(property "Reference" "H4"
-			(at 0 -3.8 0)
+			(at 0 -5.23 0)
 			(layer "F.SilkS")
 			(uuid "48c70841-bac1-4724-b48a-9f3b8bcdb64d")
 			(effects
@@ -9309,7 +9309,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 0 3.8 0)
+			(at 0 5.42 0)
 			(layer "F.Fab")
 			(uuid "accf0031-5608-4879-9a2c-e4f7de0826c7")
 			(effects
