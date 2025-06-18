@@ -1,0 +1,90 @@
+LTspice 24.0.12 for Windows
+Circuit: * C:\Users\koszs\Desktop\j\Falownik\Falownik.asc
+Start Time: Tue Jun 17 18:26:26 2025
+Warning: Multiple definitions of model "sw" Type: Switch
+solver = Normal
+Maximum thread count: 4
+tnom = 27
+temp = 27
+method = modified trap
+WARNING: Node N012 is floating.
+WARNING: Node N014 is floating.
+
+Direct Newton iteration for .op point succeeded.
+Heightened Def Con from 0.000235234 to 0.000235235
+Heightened Def Con from 0.000235235 to 0.000235238
+Heightened Def Con from 0.000446409 to 0.000446412
+Heightened Def Con from 0.000500001 to 0.000500001
+Heightened Def Con from 0.000500001 to 0.000500003
+Heightened Def Con from 0.000706004 to 0.000706008
+Heightened Def Con from 0.0011778 to 0.0011778
+Heightened Def Con from 0.00290835 to 0.00290836
+Heightened Def Con from 0.00308524 to 0.00308524
+Heightened Def Con from 0.00594132 to 0.00594133
+Heightened Def Con from 0.00882233 to 0.00882233
+Heightened Def Con from 0.00976478 to 0.00976478
+Heightened Def Con from 0.0111778 to 0.0111778
+Heightened Def Con from 0.0118604 to 0.0118604
+Heightened Def Con from 0.01495 to 0.01495
+Heightened Def Con from 0.0169149 to 0.0169149
+Heightened Def Con from 0.0178739 to 0.0178739
+Heightened Def Con from 0.0192004 to 0.0192004
+Heightened Def Con from 0.0211778 to 0.0211778
+Heightened Def Con from 0.0218604 to 0.0218604
+Heightened Def Con from 0.0221263 to 0.0221263
+Heightened Def Con from 0.0269149 to 0.0269149
+Heightened Def Con from 0.0288223 to 0.0288223
+Heightened Def Con from 0.0311778 to 0.0311778
+Heightened Def Con from 0.0318604 to 0.0318604
+Heightened Def Con from 0.0330853 to 0.0330853
+Heightened Def Con from 0.033939 to 0.033939
+Heightened Def Con from 0.03495 to 0.03495
+Heightened Def Con from 0.0350502 to 0.0350502
+Heightened Def Con from 0.0359414 to 0.0359414
+Heightened Def Con from 0.0369149 to 0.0369149
+Heightened Def Con from 0.0388224 to 0.0388224
+Heightened Def Con from 0.0411777 to 0.0411777
+Heightened Def Con from 0.0429084 to 0.0429084
+Heightened Def Con from 0.0430853 to 0.0430853
+Heightened Def Con from 0.043939 to 0.043939
+Heightened Def Con from 0.0440589 to 0.0440589
+Heightened Def Con from 0.0459414 to 0.0459414
+Heightened Def Con from 0.0469149 to 0.0469149
+Heightened Def Con from 0.0497648 to 0.0497648
+Heightened Def Con from 0.0511779 to 0.0511779
+Heightened Def Con from 0.0518604 to 0.0518604
+Heightened Def Con from 0.0530853 to 0.0530853
+Heightened Def Con from 0.053939 to 0.0539391
+Heightened Def Con from 0.05495 to 0.05495
+Heightened Def Con from 0.0569149 to 0.0569149
+Heightened Def Con from 0.0578739 to 0.0578739
+Heightened Def Con from 0.0588224 to 0.0588224
+Heightened Def Con from 0.0597648 to 0.0597648
+Heightened Def Con from 0.0611779 to 0.0611779
+Heightened Def Con from 0.0613314 to 0.0613314
+Heightened Def Con from 0.0629084 to 0.0629084
+Heightened Def Con from 0.0640589 to 0.0640589
+Heightened Def Con from 0.0660612 to 0.0660612
+Heightened Def Con from 0.066915 to 0.066915
+Heightened Def Con from 0.0670918 to 0.0670918
+Heightened Def Con from 0.0678739 to 0.0678739
+Heightened Def Con from 0.0729084 to 0.0729084
+Heightened Def Con from 0.0730853 to 0.0730853
+Heightened Def Con from 0.0739391 to 0.0739391
+Heightened Def Con from 0.0760612 to 0.0760612
+Heightened Def Con from 0.0778739 to 0.077874
+Heightened Def Con from 0.0829084 to 0.0829084
+Heightened Def Con from 0.0850503 to 0.0850503
+Heightened Def Con from 0.086915 to 0.086915
+Heightened Def Con from 0.0870919 to 0.0870919
+Heightened Def Con from 0.0888224 to 0.0888224
+Heightened Def Con from 0.0892005 to 0.0892005
+Heightened Def Con from 0.0897649 to 0.0897649
+Heightened Def Con from 0.0911779 to 0.0911779
+Heightened Def Con from 0.0918604 to 0.0918604
+Heightened Def Con from 0.0949501 to 0.0949501
+Heightened Def Con from 0.0950502 to 0.0950502
+Heightened Def Con from 0.097874 to 0.097874
+Heightened Def Con from 0.0981399 to 0.0981399
+Total elapsed time: 4.065 seconds.
+
